@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 ---
-title: Pneumonia Detector
+title: PneumoVision
 emoji: 🫁
 colorFrom: blue
 colorTo: red
@@ -60,7 +60,3 @@ streamlit run app.py
 - Framework: TensorFlow / Keras
 - Frontend: Streamlit
 - Interpretability: Grad-CAM
-=======
-# PneumoVision
-`PneumoVision is an AI-powered pneumonia detection system that analyzes chest X-ray images using deep learning. Built with EfficientNet and CNN techniques, it helps identify pneumonia quickly and accurately through an easy-to-use web interface.`
->>>>>>> 9c9932ad1705d543fbd1ccb6b7cf86441dd50480

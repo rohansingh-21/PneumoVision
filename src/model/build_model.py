@@ -5,7 +5,7 @@ from tensorflow.keras.applications import EfficientNetB0
 # pyrefly: ignore [missing-import]
 from tensorflow.keras.models import Sequential
 # pyrefly: ignore [missing-import]
-from tensorflow.keras.layers import Dense, Dropout, GlobalAveragePooling2D
+from tensorflow.keras.layers import Dense, Dropout, GlobalAveragePooling2D, BatchNormalization
 # pyrefly: ignore [missing-import]
 from tensorflow.keras.optimizers import Adam
 # pyrefly: ignore [missing-import]
@@ -24,10 +24,11 @@ def build_model():
     model = Sequential([
         base_model,
         GlobalAveragePooling2D(),
-        Dense(128, activation='relu', kernel_regularizer=l2(0.001)),
-        Dropout(0.5),
-        Dense(128, activation='relu', kernel_regularizer=l2(0.001)),
+        BatchNormalization(),
+        Dense(256, activation='relu', kernel_regularizer=l2(0.0005)),
         Dropout(0.4),
+        Dense(128, activation='relu', kernel_regularizer=l2(0.0005)),
+        Dropout(0.3),
         Dense(1, activation='sigmoid')
     ])
 
