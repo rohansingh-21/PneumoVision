@@ -1,5 +1,5 @@
 ---
-title: PneumoVision
+title: PneumoSpace
 emoji: 🫁
 colorFrom: blue
 colorTo: red
