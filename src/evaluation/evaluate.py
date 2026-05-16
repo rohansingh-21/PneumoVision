@@ -1,5 +1,8 @@
+# pyrefly: ignore [missing-import]
 import matplotlib.pyplot as plt
+# pyrefly: ignore [missing-import]
 import seaborn as sns
+# pyrefly: ignore [missing-import]
 from sklearn.metrics import classification_report, confusion_matrix
 
 def plot_history(history, history_fine):

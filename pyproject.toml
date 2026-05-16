@@ -1,2 +1,0 @@
-[tool.pyrefly]
-ignore_error_codes = ["missing-import"]
