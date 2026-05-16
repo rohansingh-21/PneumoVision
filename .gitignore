@@ -6,3 +6,13 @@ __pycache__/
 dist/
 build/
 .env
+
+# Kaggle API credentials — NEVER commit these
+.kaggle/
+kaggle.json
+access_token
+
+# Dataset — too large for Git, download separately
+chest_xray/
+chest-xray-pneumonia.zip
+data/chest_xray/
