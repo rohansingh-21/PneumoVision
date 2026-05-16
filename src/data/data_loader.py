@@ -1,10 +1,6 @@
-# pyrefly: ignore [missing-import]
 import numpy as np
-# pyrefly: ignore [missing-import]
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-# pyrefly: ignore [missing-import]
 from tensorflow.keras.applications.efficientnet import preprocess_input
-# pyrefly: ignore [missing-import]
 from sklearn.utils.class_weight import compute_class_weight
 
 IMG_SIZE = 224

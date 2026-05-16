@@ -1,4 +1,3 @@
-# pyrefly: ignore [missing-import]
 import tensorflow as tf
 from functools import reduce
 

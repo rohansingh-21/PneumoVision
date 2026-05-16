@@ -1,14 +1,8 @@
-# pyrefly: ignore [missing-import]
 import tensorflow as tf
-# pyrefly: ignore [missing-import]
 from tensorflow.keras.applications import EfficientNetB0
-# pyrefly: ignore [missing-import]
 from tensorflow.keras.models import Sequential
-# pyrefly: ignore [missing-import]
 from tensorflow.keras.layers import Dense, Dropout, GlobalAveragePooling2D
-# pyrefly: ignore [missing-import]
 from tensorflow.keras.optimizers import Adam
-# pyrefly: ignore [missing-import]
 from tensorflow.keras.regularizers import l2
 
 IMG_SIZE = 224

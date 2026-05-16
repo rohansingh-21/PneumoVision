@@ -1,11 +1,7 @@
-
-# pyrefly: ignore [missing-import]
 import streamlit as st
 import numpy as np
 import tensorflow as tf
-# pyrefly: ignore [missing-import]
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
-# pyrefly: ignore [missing-import]
 from tensorflow.keras.applications.efficientnet import preprocess_input
 
 from src.gradcam.gradcam import make_gradcam_heatmap
@@ -19,7 +15,7 @@ def load_model():
     return tf.keras.models.load_model(MODEL_PATH)
 
 st.set_page_config(page_title="Pneumonia Detector", page_icon="🫁")
-st.title("🫁 Pneumonia Detector")
+st.title("Pneumonia Detector")
 st.write("Upload a Chest X-ray to detect Pneumonia with Grad-CAM visualization.")
 
 uploaded = st.file_uploader("Choose an X-ray image", type=["jpg", "jpeg", "png"])

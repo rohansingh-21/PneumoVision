@@ -1,8 +1,5 @@
-# pyrefly: ignore [missing-import]
 import tensorflow as tf
-# pyrefly: ignore [missing-import]
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
-# pyrefly: ignore [missing-import]
 from tensorflow.keras.optimizers import Adam
 
 def train(model, train_generator, val_generator, class_weight):
