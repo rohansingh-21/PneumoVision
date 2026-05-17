@@ -128,24 +128,19 @@ Class imbalance handled via **balanced class weights** during training.
 ## Project Structure
 
 ```
-pneumonia-detector/
-├── app.py                  # Streamlit web app
-├── requirements.txt        # Python dependencies
-├── README.md               # This file
+PneumoVision/
+├── app.py              # Streamlit web app (entry point)
+├── Dockerfile          # Hugging Face Spaces deployment
+├── requirements.txt
+├── download_dataset.py # Kaggle dataset downloader
 ├── model/
-│   └── model.keras         # Trained EfficientNetB0 weights
+│   └── model.keras     # Trained weights (Git LFS)
 └── src/
-    ├── data/
-    │   └── data_loader.py  # Data generators and class weights
-    ├── model/
-    │   └── build_model.py  # EfficientNetB0 architecture
-    ├── training/
-    │   └── train.py        # Training and fine-tuning logic
-    ├── evaluation/
-    │   └── evaluate.py     # Metrics and confusion matrix
-    └── gradcam/
-        ├── gradcam.py      # Grad-CAM heatmap generation
-        └── display.py      # Heatmap overlay and visualization
+    ├── data/           # Data loaders
+    ├── model/          # Model architecture
+    ├── training/       # Train & fine-tune scripts
+    ├── evaluation/     # Metrics
+    └── gradcam/        # Grad-CAM heatmaps
 ```
 
 ---
@@ -153,11 +148,13 @@ pneumonia-detector/
 ## Run Locally
 
 ```bash
-git clone https://huggingface.co/spaces/<your-username>/pneumovision
-cd pneumovision
+git clone https://github.com/rohansingh-21/PneumoVision.git
+cd PneumoVision
 pip install -r requirements.txt
 streamlit run app.py
 ```
+
+**Live demo:** [huggingface.co/spaces/rohansingh21/PneumoSpace](https://huggingface.co/spaces/rohansingh21/PneumoSpace)
 
 ---
 

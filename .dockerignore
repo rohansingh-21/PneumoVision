@@ -1,12 +1,8 @@
 .git
 .gitattributes
-PneumoSpace
 __pycache__
 *.py[cod]
-*.bak
-*.bak2
-*.bak3
-fix_model.py
+*.bak*
 chest_xray
 .venv
 venv

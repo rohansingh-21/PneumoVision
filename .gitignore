@@ -49,6 +49,9 @@ desktop.ini
 
 # ===== Misc =====
 *.log
+*.bak
+*.bak*
+fix_model.py
 tempCodeRunnerFile.py
 .ruff_cache/
 .mypy_cache/
