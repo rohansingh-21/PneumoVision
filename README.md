@@ -12,8 +12,9 @@ pinned: false
 A deep learning app that detects pneumonia from chest X-rays and explains its predictions using **Grad-CAM** heatmaps — highlighting exactly which lung regions influenced the diagnosis.
 
 ---
+**DEPLOYED**
 
-## Live Demo
+## Live Demo [huggingface.co/spaces/rohansingh21/PneumoSpace](https://huggingface.co/spaces/rohansingh21/PneumoSpace)
 
 Upload a chest X-ray → get a prediction + visual explanation in seconds.
 
