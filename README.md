@@ -168,3 +168,7 @@ streamlit run app.py
 | Interpretability | Grad-CAM |
 | Frontend | Streamlit |
 | Deployment | HuggingFace Spaces |
+
+---
+
+> *Last maintained: May 2026*
