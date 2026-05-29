@@ -33,8 +33,8 @@ if uploaded:
     img_batch = np.expand_dims(preprocess_input(img_array), axis=0)
 
     prediction = model.predict(img_batch)[0][0]
-    label = "PNEUMONIA" if prediction > 0.5 else "NORMAL"
-    confidence = prediction if prediction > 0.5 else 1 - prediction
+    label = "PNEUMONIA" if prediction > 0.4  # lowered threshold for pneumonia recall else "NORMAL"
+    confidence = prediction if prediction > 0.4  # lowered threshold for pneumonia recall else 1 - prediction
 
     col1, col2 = st.columns(2)
     with col1:
