@@ -10,6 +10,15 @@ from sklearn.utils.class_weight import compute_class_weight
 IMG_SIZE = 224
 
 def get_generators(train_dir, test_dir):
+    """Load train/val/test generators with augmentation and class weights.
+
+    Args:
+        train_dir: Path to training data directory.
+        test_dir: Path to test data directory.
+
+    Returns:
+        Tuple of (train_generator, val_generator, test_generator, class_weight).
+    """
     train_datagen = ImageDataGenerator(
         preprocessing_function=preprocess_input,
         rotation_range=20,
