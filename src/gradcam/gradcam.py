@@ -3,6 +3,11 @@ import tensorflow as tf
 from functools import reduce
 
 def make_gradcam_heatmap(img_array, model, last_conv_layer_name='top_conv'):
+    """Generates a Grad-CAM heatmap for the given input image.
+
+    Uses the gradient of the output w.r.t. the last conv layer
+    to produce a class activation map highlighting important regions.
+    """
     base_model = model.layers[0]
 
     base_model_ext = tf.keras.models.Model(
