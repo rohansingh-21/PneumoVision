@@ -30,6 +30,7 @@ def train(model, train_generator, val_generator, class_weight):
     return history
 
 
+# Strategy: unfreeze last 50 layers with very low LR to adapt features to X-ray domain
 def fine_tune(model, train_generator, val_generator, class_weight):
     base_model = model.layers[0]
     for layer in base_model.layers[-50:]:
