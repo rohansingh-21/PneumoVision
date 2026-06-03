@@ -37,12 +37,12 @@ def get_generators(train_dir, test_dir):
     train_generator = train_datagen.flow_from_directory(
         train_dir, target_size=(IMG_SIZE, IMG_SIZE),
         batch_size=32, class_mode='binary',
-        subset='training', seed=42
+        subset='training', seed=42  # reproducible splits
     )
     val_generator = train_datagen.flow_from_directory(
         train_dir, target_size=(IMG_SIZE, IMG_SIZE),
         batch_size=32, class_mode='binary',
-        subset='validation', seed=42
+        subset='validation', seed=42  # reproducible splits
     )
     test_generator = test_datagen.flow_from_directory(
         test_dir, target_size=(IMG_SIZE, IMG_SIZE),
